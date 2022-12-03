@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creatives</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <section class="box-wrapper">
+        <!-- left section -->
+        <section class="left">
+          <section class="left-top-box">
+            <h3 class="header">Filter By:</h3>
+            <div class="group">
+              <div class="group-top-box">
+                <h4>Color</h4>
+                <div class="color-box">
+                  <span class="left-span"></span>
+                  <span class="left-span"></span>
+                  <span class="left-span"></span>
+                  <span class="left-span"></span><br />
+                  <span class="left-span"></span>
+                  <span class="left-span"></span>
+                </div>
+              </div>
+              <div class="group-top-box">
+                <h4>tittle/subTittle</h4>
+                <form action="">
+                  <input type="text" placeholder="title or subtittle" id="search" />
+                </form>
+              </div>
+            </div>
+            <div class="group2">
+              <div class="progress">
+                <div class="bar">
+                  <div class="bar2"></div>
+                </div>
+                <h3 >0/5 Creatives</h3>
+              </div>
+              <button id="add-creativ">+ add Creatives</button>
+            </div>
+          </section>
+          <section class="left-bottom-box">
+            <ul class="list">
+              
+            </ul>
+          </section>
+        </section>
+        <!-- Right section -->
+        <section class="right">
+          <div class="right-box">
+            <div class="creative-creation">
+              <h3>creative-creation</h3>
+              <i class="fa-sharp fa-solid fa-xmark" id="close"></i>
+            </div>
+            <div class="b1">
+              <form action="">
+                <h4>title</h4>
+                <input onchange="ch1(event)" type="text" placeholder="title..." id="title" />
+              </form>
+            </div>
+            <div class="b1 b2">
+              <form action="">
+                <h4>sub title</h4>
+                <input onchange="ch2(event)" type="text" placeholder="sub title..." id="title" />
+              </form>
+            </div>
+            <div class="right-colors">
+              <h4>Background Color</h4>
+              <div class="color">
+                <span class="right-span"></span>
+                <span class="right-span"></span>
+                <span class="right-span"></span>
+                <span class="right-span"></span><br />
+                <span class="right-span"></span>
+                <span class="right-span"></span>
+              </div>
+            </div>
+            <div class="btn-box">
+                <button id="done">Done</button>
+              </div>
+          </div>
+         
+        </section>
+       
+      </section>
+    </section>
+  </body>
+</html>
